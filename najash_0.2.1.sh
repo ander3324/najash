@@ -226,7 +226,7 @@ done
  #       MenuSpoofing(){
 #    clear
 #    echo "******************************************"
-#   echo "*  BIEN VENIDOS AL MENU DE HERRAMIENTAS  *"
+#   echo "*  BIENVENIDOS AL MENU DE HERRAMIENTAS  *"
 #   echo "*              SPOOFING                  *"              
 #   echo "******************************************"
 #   echo  
@@ -247,7 +247,7 @@ done
 
 #   MenuSpoofing
 
-#        read -p " Ingresa tu Opcion: " SPOO
+#        read -p " Ingresa tu Opción: " SPOO
 
 #        case $SPOO in
 
@@ -257,7 +257,7 @@ done
 
 #1)
 ##
-## En este submenu podras bloquear puertos o el ingreso a un dominio dentro de la LAN.
+## En este submenú podrás bloquear puertos o el ingreso a un dominio dentro de la LAN.
 ##
 #    clear
 #    echo "    ---------------------------------
@@ -268,11 +268,11 @@ done
 #     -                               -
 #     - A - Para bloquear puertos     -
 #     -                               -
-#     - B - Para Bloquear paginas web -
+#     - B - Para Bloquear páginas web -
 #     -                               -
 #     ---------------------------------"
 
-#read -p " Ingresa la Opcion: " opt
+#read -p " Ingresa la Opción: " opt
 #case $opt in
 #    "A")
 #       read -p " Ingresa la interfaz de tu adaptador de red: " adp
@@ -287,7 +287,7 @@ done
 #2)
 #   clear
 #  read -p " IP del Getway/Router: " ip
-#   read -p " Ingresa el nombre de tu adaptdor de red: " v
+#   read -p " Ingresa el nombre de tu adaptador de red: " v
 #   macof -i $v -d $ip
 #   Continuar;;
 #3)
@@ -305,29 +305,29 @@ done
 #   Continuar;;
 #4)
 #   clear
-#   read -p " Ingresa el nombre de tu adaptdor de red: " v
+#   read -p " Ingresa el nombre de tu adaptador de red: " v
 #  msgsnarf -i $v
 #   Continuar;;
 #5)
 #   clear
-#  read -p " Ingresa el nombre de tu adaptdor de red: " v
+#  read -p " Ingresa el nombre de tu adaptador de red: " v
 #   mailsnarf -i $v
 #   Continuar;;
 #6)
 #   clear
 #   read -p " IP de la victima: " ip
-#   read -p " Ingresa el nombre de tu adaptdor de red: " v
+#   read -p " Ingresa el nombre de tu adaptador de red: " v
 #   webspy -i $v $ip
 #   Continuar;;
 #7)
 #   clear
-#   read -p " Ingresa el nombre de tu adaptdor de red: " v
+#   read -p " Ingresa el nombre de tu adaptador de red: " v
 #   read -p " Ingresa la ubicacion donde esta tu lista de HOST: " h
 #   dnsspoof -i $v -f $h
 #   Continuar;;
 #8)
 #   clear
-#   read -p " Ingresa el nombre de tu adaptdor de red: " v
+#   read -p " Ingresa el nombre de tu adaptador de red: " v
 #   read -p " Ingresa el ip del router: " ipr
 #   read -p " Ingresa el puerto que deseas bloquear: " po
 #   tcpnice -i $v net $ipr or port $po
@@ -620,17 +620,17 @@ do
     echo " \e[1;36mVolviendo al Panel Principal\e[0m"
     echo;;
  1)
-    echo "\e[1;36mSe ejecutara WIFITE de Forma Convencional\e[0m"
+    echo "\e[1;36mSe ejecutará WIFITE de Forma Convencional\e[0m"
     echo "Podremos Analizar Distintas Redes WIFI para Analizar su Vulnerabilidad"
     echo "Si no sabes como realizarlo puedes ver un ejemplo en: (https://www.youtube.com/watch?v=kpVeQMSgB7w&ab_channel=SERPIENTEGNU-LINUX)"
-    echo "Wifite se ejecutara en 10 Segundos\e[0m"
+    echo "Wifite se ejecutará en 10 Segundos\e[0m"
     echo $leyenda;
     sleep 10; 
     wifite
     Continuar;;
 
  2)
-    echo "\e[1;36mSe auditaran redes con autenticación WEP y potencia igual o superior a 10db" 
+    echo "\e[1;36mSe auditarán redes con autenticación WEP y potencia igual o superior a 10db" 
     echo "Usamos estos parámetros para poder realizar una buena inyección de paquetes"
     echo "Pudiendo garantizar un nivel de éxito aceptable en pocos minutos\e[0m"
     echo $leyenda;
@@ -639,7 +639,7 @@ do
     Continuar;;
 
  3)
-    echo "\e[1;36mSe auditaran redes con autenticación WPA y WPA2" 
+    echo "\e[1;36mSe auditarán redes con autenticación WPA y WPA2" 
     echo "Quien audita debe saber que los HANDSHAKE no son fáciles de crackear pudiendo"
     echo "durar días, semanas o meses y dependerá del diccionario que se use\e[0m"
     echo $leyenda;
@@ -650,7 +650,7 @@ do
     Continuar;; 
     
  4)
-    echo "\e[1;36mSe auditaran redes con autenticación WPS" 
+    echo "\e[1;36mSe auditarán redes con autenticación WPS" 
     echo "Quien audita debe saber que puede demorar varias horas en obtener la passwd"
     echo "mucho dependerá de la distancia en la que se encuentre el router a\e[0m"
     echo $leyenda;
@@ -712,7 +712,7 @@ do
  1)
     echo 
     echo  "\e[1;36mA - Realizar Consulta 'whois'"
-    echo  "B - Realizar Consulta 'whois' en Sitios Especificos\e[0m"
+    echo  "B - Realizar Consulta 'whois' en Sitios Específicos\e[0m"
     echo
     
     read -p "Ingresa la Opcion: " opc
@@ -750,7 +750,7 @@ do
 	echo "\e[1;36mSe Investigara un Dominio o IP en Base a su DNS\e[0m"
 	echo
 	read -p "Ingrese la IP o Dominio a Investigar: " ddom
-	read -p "Ingrese el DNS Donde se Consultara: " dnsd
+	read -p "Ingrese el DNS Donde se Consultará: " dnsd
 	dig @$ddom $dnsd query-type  query-class
 	Continuar;;
  4)
@@ -758,7 +758,7 @@ do
 	echo "\e[1;36mSe Investigara Consultas de una IP en Base a un DNS\e[0m"
 	echo
 	read -p "Ingrese la IP Pública a Investigar: " ipinv
-	read -p "Ingrese el DNS Donde se Consultara: " dnsd
+	read -p "Ingrese el DNS Donde se Consultará: " dnsd
 	dig @$ipinv $dnsd A +norecurse
 	Continuar;;
   
@@ -928,7 +928,7 @@ do
     echo  
     echo "\e[1;36mArchivos Alojados en t00ls/Hash1 previamente\e[0m"
     cd Hash1
-    read -p "Ingrese la Extención de los Archivos a Peritar, Ejemplo png, jpg doc, etc: " hash1
+    read -p "Ingrese la Extensión de los Archivos a Peritar, Ejemplo png, jpg doc, etc: " hash1
     clear
     echo
     echo "\e[37m--------------- "
@@ -959,7 +959,7 @@ do
     echo  
     echo "\e[1;36mArchivos Alojados en t00ls/MetaData previamente\e[0m"
     cd MetaData
-    read -p "Ingrese la Extención de los Archivos a Peritar, Ejemplo png, jpg doc, etc: " MetaD
+    read -p "Ingrese la Extensión de los Archivos a Peritar, Ejemplo png, jpg doc, etc: " MetaD
     exiftool *.$MetaD
     echo
     cd ..
@@ -973,7 +973,7 @@ do
     echo  
     echo "\e[1;36mArchivos Alojados en t00ls/MetaDataBorrar previamente\e[0m"
     cd MetaDataBorrar
-    read -p "Ingrese la Extención de los Archivos a Peritar, Ejemplo png, jpg doc, etc: " MetaDB
+    read -p "Ingrese la Extensión de los Archivos a Peritar, Ejemplo png, jpg doc, etc: " MetaDB
     exiftool -all= *.$MetaDB
     echo
     cd ..
@@ -983,10 +983,10 @@ do
 4)
     clear
     echo  
-    echo "\e[1;37mSI NO SABE QUE HACE ESTA HERRAMIENTA NO LE SUJERIMOS USARLA"
+    echo "\e[1;37mSI NO SABE QUE HACE ESTA HERRAMIENTA NO LE SUGERIMOS USARLA"
     echo "SI COMETE UN ERROR PUEDE PERDER INFORMACIÓN DE SU DISCO\e[0m"
-    read -p "Ingrese la Hubicación de la Imagen Binaria, Ejemplo /home/user/datos : " ifImagen
-    read -p "Ingrese la Hubicación Destino y Nombre del Archivo: " ofImagen
+    read -p "Ingrese la ubicación de la Imagen Binaria, Ejemplo /home/user/datos : " ifImagen
+    read -p "Ingrese la ubicación Destino y Nombre del Archivo: " ofImagen
     dc3dd if=$ifImagen of=$ofImagen hash=sha512 
     echo
     echo "\e[1;36mNos Encontramos en: \e[0m"
@@ -1005,10 +1005,10 @@ do
     mkdir ReportTCP
     echo
     echo "\e[1;37mLEER IMPORTANTE"
-    echo "El Logueo de las Capturas estan en ReportTCP/report.xml"
+    echo "El Logueo de las Capturas están en ReportTCP/report.xml"
     echo "Pueden Editarlos con cat ReportTCP/report.xml"
     echo "Pueden Listarlo con ls -l ReportTCP/"
-    echo "Para Terminar la Captura Apretar CTRL + C\e[0m"
+    echo "Para Terminar la Captura pulsar CTRL + C\e[0m"
     echo
     tcpflow -o ReportTCP
     Continuar;;
@@ -1021,10 +1021,10 @@ do
     read -p "Ingrese la Placa de Red Activa: " pred
     echo
     echo "\e[1;37mLEER IMPORTANTE"
-    echo "El Logueo de las Capturas estan en ReportTCP/report.xml"
+    echo "El Logueo de las Capturas están en ReportTCP/report.xml"
     echo "Pueden Editarlos con cat ReportTCP/report.xml"
     echo "Pueden Listarlo con ls -l ReportTCP/"
-    echo "Para Terminar la Captura Apretar CTRL + C\e[0m"
+    echo "Para Terminar la Captura pulsar CTRL + C\e[0m"
     echo
     tcpflow -i $pred port $port -o ReportTCP
     Continuar;;
@@ -1109,9 +1109,9 @@ echo "\e[1;37m
   
 # read -p "Su Sistema Operativo esta Nativamente en 32 bit o 64 bit" 32 64
      read -p "Ingrese el Número de su Algoritmo en que se Encuentra su Hash: " Algo
-     read -p "Ingrese el pat donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
-     read -p "ingrese el pat donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
-     read -p "Ingrese el pat donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
+     read -p "Ingrese el path donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
+     read -p "ingrese el path donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
+     read -p "Ingrese el path donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
  clear
 echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y LA CANTIDAD DE HASH A DESCRIPTAR\e[0m"
  
@@ -1122,9 +1122,9 @@ echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y L
  2)
  clear
    read -p "Ingrese el Número de su Algoritmo en que se Encuentra su Hash: " Algo
-   read -p "Ingrese el pat donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
-   read -p "ingrese el pat donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
-   read -p "Ingrese el pat donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
+   read -p "Ingrese el path donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
+   read -p "ingrese el path donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
+   read -p "Ingrese el path donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
  clear
 echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y LA CANTIDAD DE HASH A DESCRIPTAR\e[0m"
  
@@ -1134,9 +1134,9 @@ echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y L
  3)
  clear
     read -p "Ingrese el Número de su Algoritmo en que se Encuentra su Hash: " Algo
-    read -p "Ingrese el pat donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
-    read -p "ingrese el pat donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
-    read -p "Ingrese el pat donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
+    read -p "Ingrese el path donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
+    read -p "ingrese el path donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
+    read -p "Ingrese el path donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
  clear
 echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y LA CANTIDAD DE HASH A DESCRIPTAR\e[0m"
  
@@ -1146,9 +1146,9 @@ echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y L
  4)
  clear
      read -p "Ingrese el Número de su Algoritmo en que se Encuentra su Hash: " Algo
-     read -p "Ingrese el pat donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
-     read -p "ingrese el pat donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
-     read -p "Ingrese el pat donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
+     read -p "Ingrese el path donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
+     read -p "ingrese el path donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
+     read -p "Ingrese el path donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
  clear
 echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y LA CANTIDAD DE HASH A DESCRIPTAR\e[0m"
  
@@ -1159,11 +1159,11 @@ echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y L
  5)
  clear
      read -p "Ingrese el Número de su Algoritmo en que se Encuentra su Hash: " Algo
-     read -p "Ingrese el pat donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
-     read -p "ingrese el pat donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
-     read -p "Ingrese el pat donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
-     read -p "Ingrese el pat con su Tabla generada, por ejemplo /home/user/reglas.txt. Las Reglas podemos generarlas
-     nosotros mismos por ejemplo reemplazar las Vocales por numeros y tendriamos que poner en reglas.txt algo así
+     read -p "Ingrese el path donde se encuentran los hash a crackear por ejemplo /home/user/hash.txt: " hash
+     read -p "ingrese el path donde se encuentran el diccionario por ejemplo /home/user/diccionario.txt: " dic
+     read -p "Ingrese el path donde quiere los resultados del proceso por ejemplo /home/user/resultados.txt: " resul
+     read -p "Ingrese el path con su Tabla generada, por ejemplo /home/user/reglas.txt. Las Reglas podemos generarlas
+     nosotros mismos por ejemplo reemplazar las Vocales por numeros y tendríamos que poner en reglas.txt algo así
      a=1 e=2 i=3 o=4 u=5 en el archivo, podemos ver un ejemplo en /t00ls/hashcat/reglas/reglas.txt: " reglas
  clear
 echo "\e[1;37mESTO PUEDE DEMORAR MINUTOS U HORAS DEPENDIENDO DEL DICCIONARIO Y LA CANTIDAD DE HASH A DESCRIPTAR\e[0m"
@@ -1185,7 +1185,7 @@ while [ 8 ]
 do
         MenuPrincipal
 
-        read -p " Ingresa tu Opcion: " OPCION
+        read -p " Ingresa tu Opción: " OPCION
 
         case $OPCION in
 
